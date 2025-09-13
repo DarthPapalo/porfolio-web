@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+@plugin "@midudev/tailwind-animations";
+
+
+@theme {
+    /* Colores */
+    --color-primary-dark: oklch(0.21 0.006 285.885);
+    --color-secondary-dark: oklch(0.968 0.007 247.896);
+
+    --color-background-light: oklch(0.869 0.022 252.894);
+
+}
+
+.hover-effect {
+        @apply hover:scale-115 hover:drop-shadow-md hover:drop-shadow-secondary-dark/70 transition-all duration-[350ms] transform-gpu;
+}
+
+html {
+    font-family: "Tomorrow", system-ui, sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
