@@ -1,0 +1,23 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";    
+---
+
+
+<section>
+    <header class="flex justify-center mb-10">
+        <h2 class="section-title">Experiencia</h2>
+    </header>
+    <div class="flex flex-row gap-6 mx-40">
+        <!-- Experience items -->
+        <div id="experience-container" class="flex flex-col gap-6 items-center flex-3">
+            <ExperienceItem
+                title="Bioinformático - BIV UGent"
+                start_date="Abril 2025"
+                end_date="Junio 2025"
+                location="Gante, Bélgica"
+            >
+                <p class="text-xl text-pretty dark:text-secondary-dark/90">Trabajé como bioinformático para un equipo de investigación dedicado al estudio de datos transcriptómicos. Desarrollé una pipeline modular y escalable para el preprocesado, ensamblaje y cuantificación de datos transcriptómicos obtenidos mediante Long-read RNA-seq utilizando <strong>Nextflow.</strong></p>
+            </ExperienceItem>
+        </div>
+    </div>
+</section>

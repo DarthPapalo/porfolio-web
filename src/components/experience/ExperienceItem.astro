@@ -1,0 +1,22 @@
+---
+interface Props {
+    title: string;
+    start_date: string;
+    end_date: string;
+    location: string;
+}
+
+const { title, start_date, end_date, location } = Astro.props;
+---
+
+<article class={"dark:bg-primary-dark/70 p-6 rounded-2xl border-2 dark:border-secondary-dark/80"}>
+    <h3 class="text-2xl dark:text-secondary-dark">{title}</h3>
+    
+    <div class="flex row justify-between">
+        <p class="text-lg dark:text-secondary-dark/70 italic mb-1.5">{start_date} - {end_date}</p>
+        <p class="text-lg dark:text-secondary-dark/70 italic mb-1.5">{location}</p>
+    </div>
+
+    <slot />
+
+</article>

@@ -1,8 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Welcome from "../components/welcome/Welcome.astro";
+import Experience from "../components/experience/Experience.astro";
 ---
 
 <Layout title="Porfolio de Pablo Vidal Vaquero">
-    <Welcome />
+    <ol class="flex flex-col gap-30">
+        <li><Welcome /></li>
+        <li><Experience /></li>
+    </ol>
 </Layout>
