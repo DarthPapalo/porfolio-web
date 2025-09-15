@@ -1,12 +1,10 @@
 ---
+import SectionContainer from "../SectionContainer.astro";
 import ExperienceItem from "./ExperienceItem.astro";    
 ---
 
 
-<section>
-    <header class="flex justify-center mb-10">
-        <h2 class="section-title">Experiencia</h2>
-    </header>
+<SectionContainer title="Experiencia">
     <div class="flex flex-row gap-6 mx-40">
         <!-- Experience items -->
         <div id="experience-container" class="flex flex-col gap-6 items-center flex-3">
@@ -20,4 +18,4 @@ import ExperienceItem from "./ExperienceItem.astro";
             </ExperienceItem>
         </div>
     </div>
-</section>
+</SectionContainer>

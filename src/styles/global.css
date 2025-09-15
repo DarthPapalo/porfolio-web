@@ -28,11 +28,6 @@
     @apply hover:scale-115 hover:drop-shadow-md hover:drop-shadow-foreground-light/70 hover:dark:drop-shadow-foreground-dark/70 transition-all duration-[350ms] transform-gpu;
 }
 
-.section-title {
-    @apply text-foreground-light dark:text-foreground-dark text-5xl;
-}
-
-
 html {
     font-family: "Geist", system-ui, sans-serif;
     scroll-behavior: smooth;
