@@ -2,11 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Welcome from "../components/welcome/Welcome.astro";
 import Experience from "../components/experience/Experience.astro";
+import TechnologyStack from "../components/technology_stack/TechnologyStack.astro";
 ---
 
 <Layout title="Porfolio de Pablo Vidal Vaquero">
-    <ol class="flex flex-col gap-30">
-        <li><Welcome /></li>
-        <li><Experience /></li>
-    </ol>
+    <div class="flex flex-col gap-30">
+        <Welcome />
+        <Experience />
+        <TechnologyStack />
+    </div>
 </Layout>
