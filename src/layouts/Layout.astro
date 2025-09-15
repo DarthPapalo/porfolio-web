@@ -18,8 +18,8 @@ const { title } = Astro.props;
         <title>{title}</title>
     </head>
     <body>
-        <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(180%_200%_at_90%_-18%,#000_45%,#54f782_180%)]"></div>
-        <main class="my-15 mx-30">
+        <div class="fixed inset-0 -z-1 h-full w-full items-center px-5 py-24 [background:radial-gradient(180%_200%_at_90%_-18%,#f2f2f2_45%,#54f782_180%)] dark:[background:radial-gradient(180%_200%_at_90%_-18%,#000_45%,#54f782_180%)]"></div>
+        <main class="my-25 mx-30">
             <!-- <Header /> -->
             <slot />
         </main>

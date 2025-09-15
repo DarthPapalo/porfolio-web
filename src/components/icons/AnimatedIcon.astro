@@ -6,6 +6,6 @@ interface Props {
 const { url } = Astro.props;
 ---
 
-<a class="dark:stroke-secondary-dark size-[50px] hover-effect" href={url} target="_blank" rel="noopener noreferrer">
+<a class="stroke-foreground-light dark:stroke-foreground-dark size-[50px] hover-effect" href={url} target="_blank" rel="noopener noreferrer">
     <slot />
 </a>

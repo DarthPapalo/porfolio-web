@@ -1,31 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 @import "tailwindcss";
+
 @plugin "@midudev/tailwind-animations";
 
 
+/* Light mode */
 @theme {
-    /* Colores */
-    --color-primary-dark: oklch(0.21 0.006 285.885);
-    --color-secondary-dark: oklch(0.968 0.007 247.896);
+    --color-*: initial;
 
-    --color-background-light: oklch(0.869 0.022 252.894);
+    --color-background-dark: #0e100f;
+    --color-background-light: #ffffff;
 
+    --color-foreground-dark: #e6eefa;
+    --color-foreground-light: #1e1e1e;
+
+    --color-highlight-dark: #0bff60;
+    --color-highlight-light: #08cc4c;
+
+}
+
+* {
+    @apply transition-colors duration-200;
 }
 
 .hover-effect {
-        @apply hover:scale-115 hover:drop-shadow-md hover:drop-shadow-secondary-dark/70 transition-all duration-[350ms] transform-gpu;
+    @apply hover:scale-115 hover:drop-shadow-md hover:drop-shadow-foreground-light/70 hover:dark:drop-shadow-foreground-dark/70 transition-all duration-[350ms] transform-gpu;
 }
+
+.section-title {
+    @apply text-foreground-light dark:text-foreground-dark text-5xl;
+}
+
 
 html {
-    font-family: "Tomorrow", system-ui, sans-serif;
-
+    font-family: "Geist", system-ui, sans-serif;
+    scroll-behavior: smooth;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 p {
-    font-weight: 400;
+    font-weight: 300;
 }
