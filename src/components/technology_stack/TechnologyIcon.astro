@@ -1,0 +1,12 @@
+---
+interface Props {
+    name: string;
+}
+
+const { name } = Astro.props;
+---
+
+<article class="flex flex-col items-center gap-1.5 justify-center aspect-square p-6 overflow-hidden card-hover">
+    <slot />
+    <h3 class="inline font-[JetBrains_Mono] text-xl text-center text-foreground-light dark:text-foreground-dark">{name}</h3>
+</article>
