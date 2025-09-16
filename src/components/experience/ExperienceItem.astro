@@ -10,11 +10,11 @@ const { title, start_date, end_date, location } = Astro.props;
 ---
 
 <article class={"bg-background2-light/50 dark:bg-background2-dark/50 p-6 rounded-2xl border-2 border-foreground-light/20 dark:border-foreground-dark/20"}>
-    <h3 class="text-2xl text-foreground-light dark:text-foreground-dark">{title}</h3>
+    <h3 class="text-sm md:text-xl lg:text-2xl text-foreground-light dark:text-foreground-dark">{title}</h3>
     
     <div class="flex row justify-between">
-        <time class="text-lg text-foreground-light/70 dark:text-foreground-dark/70 italic mb-1.5">{start_date} - {end_date}</time>
-        <p class="text-lg text-foreground-light/70 dark:text-foreground-dark/70 italic mb-1.5">{location}</p>
+        <time class="text-xs md:text-sm lg:text-lg text-foreground-light/70 dark:text-foreground-dark/70 italic mb-1.5">{start_date} - {end_date}</time>
+        <p class="text-xs md:text-sm lg:text-lg text-foreground-light/70 dark:text-foreground-dark/70 italic mb-1.5">{location}</p>
     </div>
 
     <slot />

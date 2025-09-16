@@ -6,7 +6,7 @@ interface Props {
 const { name } = Astro.props;
 ---
 
-<article class="flex flex-col items-center gap-1.5 justify-center aspect-square p-6 overflow-hidden card-hover">
+<article class="flex flex-col items-center gap-0.5 md:gap-1 lg:gap-2 p-1.5 md:p-3 lg:p-5 md:justify-center aspect-square overflow-hidden card-hover">
     <slot />
-    <h3 class="inline font-[JetBrains_Mono] text-xl text-center text-foreground-light dark:text-foreground-dark">{name}</h3>
+    <h3 class="font-[JetBrains_Mono] text-[0.5em] md:text-base lg:text-lg xl:text-2xl text-center text-foreground-light dark:text-foreground-dark">{name}</h3>
 </article>
