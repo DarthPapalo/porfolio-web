@@ -9,8 +9,11 @@
 @theme {
     --color-*: initial;
 
-    --color-background-dark: #0e100f;
-    --color-background-light: #ffffff;
+    --color-background-dark: #16181c;
+    --color-background2-dark: #202b3a;
+
+    --color-background-light: #f1f1f3;
+    --color-background2-light: #dfdfe1;
 
     --color-foreground-dark: #e6eefa;
     --color-foreground-light: #1e1e1e;
@@ -20,13 +23,20 @@
 
 }
 
+
 * {
     @apply transition-colors duration-200;
 }
 
+
 .hover-effect {
     @apply hover:scale-115 hover:drop-shadow-md hover:drop-shadow-foreground-light/70 hover:dark:drop-shadow-foreground-dark/70 transition-all duration-[350ms] transform-gpu;
 }
+
+.card-hover {
+    @apply hover:bg-background2-light/50 hover:dark:bg-background2-dark/50 bg-background2-light dark:bg-background2-dark rounded-md border-1 border-foreground-light dark:border-foreground-dark hover:border-foreground-light/60 hover:dark:border-foreground-dark/60 hover:shadow-md hover:shadow-foreground-light/20 dark:hover:shadow-foreground-dark/20 hover:scale-[115%] transition-all transform-gpu;
+}
+
 
 html {
     font-family: "Geist", system-ui, sans-serif;
