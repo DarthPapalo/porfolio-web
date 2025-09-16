@@ -17,9 +17,8 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
-    <body>
-        <div class="fixed inset-0 -z-1 h-full w-full items-center px-5 py-24 [background:radial-gradient(180%_200%_at_90%_-18%,#f2f2f2_45%,#54f782_180%)] dark:[background:radial-gradient(180%_200%_at_90%_-18%,#000_45%,#54f782_180%)]"></div>
-        <main class="my-25 mx-30">
+    <body class="bg-background-light dark:bg-background-dark">
+        <main class="my-25 mx-50">
             <!-- <Header /> -->
             <slot />
         </main>
